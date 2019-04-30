@@ -1,0 +1,10 @@
+.btn-success.disabled, .btn-success:disabled {
+  color: #fff;
+  background-color: #2196F3;
+  border-color: #2196F3;
+}
+
+.btn-success.disabled:hover, .btn-success:disabled:hover {
+  box-shadow: 4px 3px 5px 0 #9E9E9E;
+  transition: 0.3s cubic-bezier(0.03, 0, 0.99, 0.99);
+}

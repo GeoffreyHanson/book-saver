@@ -63,40 +63,40 @@ class Books extends Component {
       <Container fluid>
         <Row>
           <Col size="md-6">
-            <Jumbotron>
-              <h1>What Books Should I Read?</h1>
+            <Jumbotron> 
+              <h1>Books to Add</h1>
             </Jumbotron>
             <form>              
               <Input 
                 value={this.state.title}
                 onChange={this.handleInputChange}
                 name="title" 
-                placeholder="Title (required)" 
+                placeholder="Title" 
               />
               <Input 
                 value={this.state.author}
                 onChange={this.handleInputChange}
                 name="author" 
-                placeholder="Author (required)" 
+                placeholder="Author" 
               />
               <TextArea 
                 value={this.state.discription}
                 onChange={this.handleInputChange}
                 name="synopsis" 
-                placeholder="Synopsis (Optional)" 
+                placeholder="Synopsis" 
               />
 
               <FormBtn
                 disabled={!(this.state.author && this.state.title)}
                 onClick={this.handleFormSubmit}
               >
-                Submit Book
+                Submit
               </FormBtn>
             </form>
           </Col>
           <Col size="md-6 sm-12">
             <Jumbotron>
-              <h1>Books On My List</h1>
+              <h1>Books To Read</h1>
             </Jumbotron>
             {this.state.books.length ? (
               <List>
